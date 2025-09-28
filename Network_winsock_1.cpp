@@ -1,4 +1,6 @@
-﻿#include <winsock2.h>
+// 키보드로 부터 문자열로 표현되는 IP 주소(예: "127.0.0.1")를 입력 받아 16진수 값으로 변환하는 함수를 이용하여 변환한 후 화면에 출력하는 프로그램 작성 (cin, cout 사용)
+
+#include <winsock2.h>
 #include <ws2tcpip.h>   // inet_pton, sockaddr_in
 #include <iostream>
 #include <string>
@@ -33,3 +35,4 @@ int main() {
     WSACleanup();
     return 0;
 }
+
