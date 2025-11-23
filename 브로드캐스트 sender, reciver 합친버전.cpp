@@ -20,7 +20,8 @@ void RecvThread(SOCKET sock)
             buf[ret] = 0;
 
             std::cout << "[수신] "
-                << inet_ntoa(from.sin_addr)
+                << inet_ntoa(from.sin_addr) // IP 주소 출력
+                << ":" << ntohs(from.sin_port) // 포트 번호 출력
                 << " : " << buf << std::endl;
         }
     }
